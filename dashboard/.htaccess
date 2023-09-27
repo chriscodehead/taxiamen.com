@@ -1,0 +1,83 @@
+Options -Indexes
+Options +FollowSymLinks
+Options -MultiViews
+DirectoryIndex index.php
+RewriteEngine on
+
+
+RewriteRule ^we-welcome-you/?$ index.php [NC]
+RewriteRule ^deposit/?$ deposit.php [NC]
+RewriteRule ^deposit_btc/?$ deposit_btc.php [NC]
+RewriteRule ^invest-capital/?$ deposit.php [NC]
+RewriteRule ^deposite-fund/?$ deposit.php [NC]
+RewriteRule ^btc-payment/?$ btc-payment.php [NC]
+RewriteRule ^withdraw/?$ withdraw.php [NC]
+RewriteRule ^upload/?$ upload.php [NC]
+RewriteRule ^deposit-success/?$ deposit-success.php [NC]
+RewriteRule ^deposit-status/?$ deposit-status.php [NC]
+RewriteRule ^withdraw2/?$ withdraw2.php [NC]
+RewriteRule ^withdraw-history/?$ withdraw-history.php [NC]
+RewriteRule ^capital_interest/?$ capital_interest.php [NC]
+RewriteRule ^deposit_list/?$ deposit_list.php [NC]
+RewriteRule ^withdraw_history/?$ withdraw_history.php [NC]
+RewriteRule ^earnings/?$ earnings.php [NC]
+RewriteRule ^referals/?$ referals.php [NC]
+RewriteRule ^commission/?$ commission.php [NC]
+RewriteRule ^referallinks/?$ referallinks.php [NC]
+RewriteRule ^referral-bonus/?$ referral-bonus.php [NC]
+RewriteRule ^referals/?$ referals.php [NC]
+RewriteRule ^referral-history/?$ referral-history.php [NC]
+RewriteRule ^edit_account/?$ edit_account.php [NC]
+RewriteRule ^change-password/?$ change-password.php [NC]
+RewriteRule ^deposit-pm/?$ deposit-pm.php [NC]
+RewriteRule ^deposit-history/?$ deposit-history.php [NC]
+RewriteRule ^verify-account/?$ verify-account.php [NC]
+RewriteRule ^payment-invoice/?$ payment-invoice.php [NC]
+RewriteRule ^complet-payment/?$ complet-payment.php [NC]
+RewriteRule ^pm-success-pay/?$ pm-success-pay.php [NC]
+RewriteRule ^pm-unsuccess-pay/?$ pm-unsuccess-pay.php [NC]
+RewriteRule ^deposit-processor/?$ deposit-processor.php [NC]
+RewriteRule ^add-wallet/?$ add-wallet.php [NC]
+RewriteRule ^wallets/?$ wallets.php [NC]
+RewriteRule ^all-transaction/?$ all-transaction.php [NC]
+RewriteRule ^withdrawal-history/?$ withdrawal-history.php [NC]
+RewriteRule ^notification-details/?$ notification-details.php [NC]
+RewriteRule ^profile-security/?$ profile-security.php [NC]
+RewriteRule ^notification/?$ notification.php [NC]
+RewriteRule ^my-referrals/?$ my-referrals.php [NC]
+RewriteRule ^view-wallet-detail/?$ view-wallet-detail.php [NC]
+RewriteRule ^update-password/?$ update-password.php [NC]
+
+
+RewriteRule ^my-account/?$ profile.php [NC]
+RewriteRule ^two-factor/?$ setting.php [NC]
+
+RewriteRule ^deposite-option/?$ deposite-option.php [NC]
+RewriteRule ^invest-capital/?$ deposite-fund.php [NC]
+RewriteRule ^deposite-fund/?$ deposite-fund.php [NC]
+RewriteRule ^invest-in-forex/?$ deposite-fund-f.php [NC]
+RewriteRule ^history-of-deposites/?$ deposite-history.php [NC]
+RewriteRule ^pending-deposites/?$ pending-deposite.php [NC]
+RewriteRule ^investments/?$ my-investments.php [NC]
+
+RewriteRule ^withdraw-intrest/?$ withdraw-fund.php [NC]
+RewriteRule ^pending-withdraw/?$ pending-withdrawal.php [NC]
+RewriteRule ^all-withdrawal-history/?$ allwithdrawal.php [NC]
+RewriteRule ^withdrawal-history/?$ withdrawal-history.php [NC]
+
+RewriteRule ^my-refferals/?$ referral.php [NC]
+RewriteRule ^my-refferals-bonus/?$ referral-bonus.php [NC]
+
+RewriteRule ^support-team/?$ support.php [NC]
+RewriteRule ^support/?$ support.php [NC]
+RewriteRule ^profile/?$ profile.php [NC]
+RewriteRule ^add-fund-to-account/?$ add-fund.php [NC]
+
+
+
+
+
+#ErrorDocument 404 /404.php
+#ErrorDocument 500 /index.php/500/
+#RewriteRule ^(.*)$ admin_login.php?/$1 [NC,L,QSA]
+#RewriteRule ^(.*)$ admin_login.php/$1 [NC,L,QSA]

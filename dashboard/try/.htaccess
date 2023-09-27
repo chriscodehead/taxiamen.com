@@ -1,0 +1,29 @@
+Options -Indexes
+Options +FollowSymLinks
+Options -MultiViews
+DirectoryIndex index.php
+RewriteEngine on
+
+
+RewriteRule ^we-welcome-you/?$ index.php [NC]
+RewriteRule ^_gt=my-profile.html/?$ profile.php [NC]
+RewriteRule ^_gt=invest-capital.html/?$ deposite-fund.php [NC]
+RewriteRule ^_gt=all-pending-deposites.html/?$ pending-deposite.php [NC]
+RewriteRule ^_gt=history-of-deposites.html/?$ deposite-history.php [NC]
+RewriteRule ^_gt=withdraw-intrest.html/?$ withdraw-fund.php [NC]
+RewriteRule ^_gt=all-pending-withdraw.html/?$ pending-withdrawal.php [NC]
+RewriteRule ^_gt=all-withdrawal-history.html/?$ withdrawal-history.php [NC]
+RewriteRule ^_gt=support-team.html/?$ support.php [NC]
+RewriteRule ^_gt=my-refferals.html/?$ referral.php [NC]
+RewriteRule ^_gt=my-refferals-bonus.html/?$ referral-bonus.php [NC]
+RewriteRule ^_gt=investments.html/?$ my-investments.php [NC]
+RewriteRule ^_gt=withdrawal-history.html/?$ allwithdrawal.php [NC]
+
+
+
+
+
+#ErrorDocument 404 /404.php
+#ErrorDocument 500 /index.php/500/
+#RewriteRule ^(.*)$ admin_login.php?/$1 [NC,L,QSA]
+#RewriteRule ^(.*)$ admin_login.php/$1 [NC,L,QSA]

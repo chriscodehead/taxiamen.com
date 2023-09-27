@@ -1,0 +1,103 @@
+[28-Oct-2019 08:24:21 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRAA5db6ddf4927d76&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[28-Oct-2019 08:26:47 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRCR5db6de8690dc67&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[28-Oct-2019 10:00:04 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRTK5db6f4635478a&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[28-Oct-2019 10:01:33 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRTU5db6f4bc41da6&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[28-Oct-2019 10:25:57 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRTT5db6fa748bfd11&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[28-Oct-2019 13:10:45 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DTLC5db72114b03c62&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[28-Oct-2019 19:19:11 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRGC5db7776f19ebb3&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[29-Oct-2019 19:36:39 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRPM5db8cd064775b4&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[29-Oct-2019 19:44:58 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRDE5db8cef96e6d25&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[29-Oct-2019 21:27:03 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Fafpatrust.ltd%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DTAH5db8e6e6d69c36&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/afpazphk/public_html/dashboard/try/try.php on line 15
+[15-Mar-2023 04:21:01 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Favanexcapital.com%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRCU64117feb3c97e&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/avanqjoz/public_html/dashboard/try/try.php on line 12
+[15-Mar-2023 04:21:01 America/New_York] PHP Warning:  Attempt to read property "address" on null in /home/avanqjoz/public_html/dashboard/try/try.php on line 41
+[15-Mar-2023 04:21:13 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Favanexcapital.com%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRTF64117ff8557661&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/avanqjoz/public_html/dashboard/try/try.php on line 12
+[15-Mar-2023 04:21:13 America/New_York] PHP Warning:  Attempt to read property "address" on null in /home/avanqjoz/public_html/dashboard/try/try.php on line 31
+[15-Mar-2023 04:21:28 America/New_York] PHP Warning:  file_get_contents(https://api.blockchain.info/v2/receive?xpub=&amp;callback=https%3A%2F%2Favanexcapital.com%2Fdashboard%2Fcallback.php%3Fsecret%3D%3F%3FZzsMLGKCJe%3F%3F162CfA5Ec%3F%3FG6j%26%2Acnjhj%26tranID%3DRPP64118006d0b9b2&amp;key=0b9da7ee-b055-42fc-ac3f-1872f7641577): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/avanqjoz/public_html/dashboard/try/try.php on line 12
+[21-Sep-2023 07:05:06 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:06 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:07 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 07:05:21 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:21 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:21 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 07:05:35 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:35 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:36 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 07:05:49 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:49 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:05:50 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 07:06:04 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:06:04 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:06:05 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 07:14:28 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:14:28 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 07:14:29 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 10:02:50 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 10:02:50 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 10:02:51 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 10:04:20 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 10:04:20 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 10:04:21 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 12:40:29 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:40:29 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:40:30 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 51
+[21-Sep-2023 12:40:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bch' in 'field list' in /home/omegagoldelon/public_html/library.php:319
+Stack trace:
+#0 /home/omegagoldelon/public_html/library.php(319): PDO->prepare('UPDATE deposit_...')
+#1 /home/omegagoldelon/public_html/dashboard/try/try.php(52): Cal->update('deposit_td', Array, Array, 'transaction_id', 'RET650c39bc8e2d...')
+#2 {main}
+  thrown in /home/omegagoldelon/public_html/library.php on line 319
+[21-Sep-2023 12:41:48 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:41:48 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:41:49 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 51
+[21-Sep-2023 12:41:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bch' in 'field list' in /home/omegagoldelon/public_html/library.php:319
+Stack trace:
+#0 /home/omegagoldelon/public_html/library.php(319): PDO->prepare('UPDATE deposit_...')
+#1 /home/omegagoldelon/public_html/dashboard/try/try.php(52): Cal->update('deposit_td', Array, Array, 'transaction_id', 'RET650c39bc8e2d...')
+#2 {main}
+  thrown in /home/omegagoldelon/public_html/library.php on line 319
+[21-Sep-2023 12:42:18 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:42:18 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:42:19 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 51
+[21-Sep-2023 12:42:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bch' in 'field list' in /home/omegagoldelon/public_html/library.php:319
+Stack trace:
+#0 /home/omegagoldelon/public_html/library.php(319): PDO->prepare('UPDATE deposit_...')
+#1 /home/omegagoldelon/public_html/dashboard/try/try.php(52): Cal->update('deposit_td', Array, Array, 'transaction_id', 'RET650c39bc8e2d...')
+#2 {main}
+  thrown in /home/omegagoldelon/public_html/library.php on line 319
+[21-Sep-2023 12:42:32 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:42:32 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:42:33 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 51
+[21-Sep-2023 12:42:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bch' in 'field list' in /home/omegagoldelon/public_html/library.php:319
+Stack trace:
+#0 /home/omegagoldelon/public_html/library.php(319): PDO->prepare('UPDATE deposit_...')
+#1 /home/omegagoldelon/public_html/dashboard/try/try.php(52): Cal->update('deposit_td', Array, Array, 'transaction_id', 'RET650c39bc8e2d...')
+#2 {main}
+  thrown in /home/omegagoldelon/public_html/library.php on line 319
+[21-Sep-2023 12:42:35 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:42:35 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:42:36 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 51
+[21-Sep-2023 12:42:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bch' in 'field list' in /home/omegagoldelon/public_html/library.php:319
+Stack trace:
+#0 /home/omegagoldelon/public_html/library.php(319): PDO->prepare('UPDATE deposit_...')
+#1 /home/omegagoldelon/public_html/dashboard/try/try.php(52): Cal->update('deposit_td', Array, Array, 'transaction_id', 'RET650c39bc8e2d...')
+#2 {main}
+  thrown in /home/omegagoldelon/public_html/library.php on line 319
+[21-Sep-2023 12:46:54 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:46:54 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 12:46:54 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
+[21-Sep-2023 18:14:02 UTC] PHP Deprecated:  Optional parameter $fields declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 18:14:02 UTC] PHP Deprecated:  Optional parameter $values declared before required parameter $clause is implicitly treated as a required parameter in /home/omegagoldelon/public_html/library.php on line 310
+[21-Sep-2023 18:14:03 UTC] PHP Warning:  Attempt to read property "address" on null in /home/omegagoldelon/public_html/dashboard/try/try.php on line 41
