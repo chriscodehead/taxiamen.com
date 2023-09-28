@@ -90,18 +90,33 @@ $durationG = 'Daily After 2 Months';
 
 $siteYear = date('Y');
 $companyNumber = '05065624';
-$siteLink = 'https://trustchainworld.com/accounts/register';
-$siteRegister = 'https://trustchainworld.com/accounts/register';
-$siteLogin = 'https://trustchainworld.com/accounts/login';
-$site = 'https://trustchainworld.com';
-$domain = 'trustchainworld.com';
 $siteName = $row['site_name'];
-$siteEmail = "support@trustchainworld.com";
-$siteEmail2 = "support@trustchainworld.com";
+$dummyEmail = 'amentaxi24.7@gmail.com';
+$domain = 'taxiamen.com';
+$siteLink = 'https://' . $domain . '/';
+$siteRegister = 'https://' . $domain . '/accounts/register';
+$siteLogin = 'https://' . $domain . '/accounts/login';
+$site = 'https://' . $domain;
+
+$siteEmail = "amentaxi24.7@gmail.com";
+$siteEmail1 = "support@" . $domain;
+$siteEmail2 = "info@" . $domain;
+
 $sitePhone = $row['site_phone'];
 $sitePhone2 = $row['site_phone'];
 $siteWhatsApp = $row['site_whatsapp_num'];
 $siteAddress = $row['site_address'];
+$site_whatsapp_num = $siteWhatsApp;
+$siteWhatsApp = 'https://api.whatsapp.com/send?phone=' . $site_whatsapp_num . '&text=Hi ' . $siteName . ', my name is ...! I want to book a taxi';
+$siteDomain = $domain;
+$siteWhatsAppLink = 'https://api.whatsapp.com/send?phone=' . $site_whatsapp_num . '&text=';
+$siteTelegram = 'https://telegram.com/';
+$siteTwitter = 'https://twitter.com/';
+$siteFacebook = 'https://facebook.com/';
+$siteLinkedin = 'https://linkedin.com/';
+$siteInstagram = 'https://instagram.com/';
+$siteYoutube = 'https://youtube.com/';
+
 $user_tb = "user_tb";
 $deposit_tb = "deposit_td";
 $tickect_tb = 'ticket_tb';
@@ -119,6 +134,11 @@ $pay_set = 'pay_set';
 $life_one_bonus = 'life_one_bonus';
 $payout_manipulate = 'payout_manipulate';
 $review = 'review';
+$taxi_type = 'taxi_type';
+$booking_tb = 'booking_tb';
+
+
+
 class Cal extends DBConnection
 {
     protected $percentageA;

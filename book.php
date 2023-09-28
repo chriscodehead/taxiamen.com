@@ -1,9 +1,50 @@
 <?php
 require_once('include.php');
 $title = $siteName . ' | ' . "From Doorstep to Destination, We`ve Got Your Back!";
-require_once('head.php')
+require_once('head.php');
 
-//name phone email pick_location drop_location passengers cab_type pick_date pick_time message condition
+//id booking_id name phone 	email pick_location drop_location passengers cab_type pick_date pick_time 	message 	taxi_type 	price taxi_title	payment_status 	booking_status 	driver 	date_booked 	comments 	update_date 	deleted  
+$msg = '';
+if (isset($_POST['sub'])) {
+ $booking_id = $bassic->picker();
+ $name = $_POST['name'];
+ $phone = $_POST['phone'];
+ $email = $_POST['email'];
+ $pick_location = $_POST['pick_location'];
+ $drop_location  = $_POST['drop_location'];
+ $passengers = $_POST['passengers'];
+ $cab_type = $_POST['cab_type'];
+ $pick_date = $_POST['pick_date'];
+ $pick_time = $_POST['pick_time'];
+ $message   = $_POST['message'];
+ $taxi_type  = $_POST['taxi_type'];
+ $price = $cal->selectFrmDB($taxi_type, 'price', 'taxi_id', $taxi_type);
+ $taxi_title = $cal->selectFrmDB($taxi_type, 'title', 'taxi_id', $taxi_type);
+ $payment_status  = 'no'; //yes
+ $booking_status  = 'In Progress'; //Picked Up, Completed
+ $driver  = '';
+ $date_booked  = date('Y-m-d g:i:a');
+ $comments   = '';
+ $update_date  =  date('Y-m-d g:i:a');
+ $deleted = 'no';
+
+ if (!empty($name) && !empty($phone) && !empty($email) && !empty($pick_location) && !empty($drop_location) && !empty($passengers) && !empty($cab_type) && !empty($pick_date) && !empty($pick_time) && !empty($taxi_type)) {
+
+  $feilds = array('id', 'booking_id', 'name', 'phone', 'email', 'pick_location', 'drop_location', 'passengers', 'cab_type', 'pick_date', 'pick_time', 'message', 'taxi_type', 'price', 'taxi_title', 'payment_status', 'booking_status', 'driver', 'date_booked', 'comments', 'update_date', 'deleted');
+
+  $value = array(null, $booking_id, $name, $phone, $email, $pick_location, $drop_location, $passengers, $cab_type, $pick_date, $pick_time, $message, $taxi_type, $price, $taxi_title, $payment_status, $booking_status, $driver, $date_booked, $comments, $update_date, $deleted);
+
+  $insert = $cal->insertDataB($booking_tb, $feilds, $value);
+
+  if ($insert) {
+   $msg = 'Your data was entered successfully!';
+  } else {
+   $msg = 'Error! Please try again.';
+  }
+ } else {
+  $msg = 'Please fill all feilds!';
+ }
+}
 ?>
 
 <body>
@@ -34,16 +75,24 @@ require_once('head.php')
   <div class="book-ride py-120">
    <div class="container">
     <div class="row">
+
+     <?php if (!empty($msg)) { ?>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+       <?php print @$msg; ?>
+       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+     <?php } ?>
+
      <div class="col-md-10 mx-auto">
       <div class="booking-form">
        <div class="book-ride-head">
         <h4 class="booking-title">Make Your Booking Today</h4>
         <p>Booking a ride with us is easy! You can call, book online, or use our website for seamless reservations.</p>
        </div>
-       <form action="#" method="post" enctype="multipart/form-data">
+       <form action="book" method="post" enctype="multipart/form-data">
         <div class="row">
 
-         <div class="col-lg-4">
+         <div class="col-lg-6">
           <div class="form-group">
            <label>Full Name</label>
            <input id="name" name="name" type="text" class="form-control" placeholder="Your Name">
@@ -51,7 +100,7 @@ require_once('head.php')
           </div>
          </div>
 
-         <div class="col-lg-4">
+         <div class="col-lg-6">
           <div class="form-group">
            <label>Phone Number</label>
            <input id="phone" name="phone" type="text" class="form-control" placeholder="Your Phone">
@@ -59,7 +108,7 @@ require_once('head.php')
           </div>
          </div>
 
-         <div class="col-lg-4">
+         <div class="col-lg-6">
           <div class="form-group">
            <label>Email</label>
            <input id="email" name="email" type="text" class="form-control" placeholder="Your Email">
@@ -86,8 +135,12 @@ require_once('head.php')
          <div class="col-lg-6">
           <div class="form-group">
            <label>Passengers</label>
-           <input id="passengers" name="passengers" type="text" class="form-control" placeholder="Passengers">
-           <i class="far fa-user-tie"></i>
+           <select id="passengers" name="cab_type" class="select">
+            <option value>Choose Cab</option>
+            <?php for ($i = 1; $i <= 20; $i++) { ?>
+             <option value="<?php print $i; ?>"><?php print $i; ?></option>
+            <?php } ?>
+           </select>
           </div>
          </div>
 
@@ -145,6 +198,27 @@ require_once('head.php')
           </div>
          </div>
 
+
+         <div class="col-lg-6">
+          <div class="form-group">
+           <label>Select Taxi Tour</label>
+           <select class="form-control" name="taxi_type" id="taxi_type">
+            <option value="">Select Tour</option>
+            <?php $sql = query_sql("SELECT * FROM $taxi_type ORDER BY id DESC");
+            $i = 1;
+            if (mysqli_num_rows($sql) > 0) {
+             while ($row = mysqli_fetch_assoc($sql)) { ?>
+
+              <option value="<?php print $row['taxi_id']; ?>"><?php print $row['title']; ?></option>
+
+            <?php }
+            } ?>
+
+           </select>
+          </div>
+         </div>
+
+
          <div class="col-lg-12">
           <div class="form-group">
            <label>Your Message</label>
@@ -162,7 +236,7 @@ require_once('head.php')
          </div>
 
          <div class="col-lg-3 mx-auto">
-          <button class="theme-btn" type="submit">Book Your Taxi<i class="fas fa-arrow-right"></i></button>
+          <button name="sub" class="theme-btn" type="submit">Book Your Taxi<i class="fas fa-arrow-right"></i></button>
          </div>
 
         </div>

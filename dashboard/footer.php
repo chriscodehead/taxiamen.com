@@ -22,7 +22,11 @@
 <script src="assets/js/charts/chart-crypto.js?ver=2.2.0"></script>
 <script src="toast/jquery.toast.js"></script>
 <script src="toast/toast-functions.js"></script>
-
+<script>
+    $(document).ready(function() {
+        $('#myTable').DataTable();
+    });
+</script>
 </body>
 
 </html>

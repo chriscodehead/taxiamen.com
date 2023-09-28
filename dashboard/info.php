@@ -2,6 +2,7 @@
     <div class="card card-bordered">
         <div class="card-inner card-inner-lg">
             <div class="align-center flex-wrap flex-md-nowrap g-4">
+
                 <div class="nk-block-image w-120px flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 118">
                         <path d="M8.916,94.745C-.318,79.153-2.164,58.569,2.382,40.578,7.155,21.69,19.045,9.451,35.162,4.32,46.609.676,58.716.331,70.456,1.845,84.683,3.68,99.57,8.694,108.892,21.408c10.03,13.679,12.071,34.71,10.747,52.054-1.173,15.359-7.441,27.489-19.231,34.494-10.689,6.351-22.92,8.733-34.715,10.331-16.181,2.192-34.195-.336-47.6-12.281A47.243,47.243,0,0,1,8.916,94.745Z" transform="translate(0 -1)" fill="#f6faff" />
@@ -22,17 +23,21 @@
                         <line x1="79.5" y1="22.5" x2="79.5" y2="26.5" fill="none" stroke="#9cabff" stroke-linecap="round" stroke-linejoin="round" />
                         <line x1="77.5" y1="24.5" x2="81.5" y2="24.5" fill="none" stroke="#9cabff" stroke-linecap="round" stroke-linejoin="round" />
                         <circle cx="90.5" cy="97.5" r="3" fill="none" stroke="#9cabff" stroke-miterlimit="10" />
-                        <circle cx="24" cy="23" r="2.5" fill="none" stroke="#9cabff" stroke-miterlimit="10" /></svg>
+                        <circle cx="24" cy="23" r="2.5" fill="none" stroke="#9cabff" stroke-miterlimit="10" />
+                    </svg>
                 </div>
+
                 <div class="nk-block-content">
                     <div class="nk-block-content-head px-lg-4">
                         <h5>We’re here to help you!</h5>
-                        <p class="text-soft">Ask a question or file a support ticket, manage request, report an issues. Our support team will get back to you by email. (<?php print $siteEmail;?>)</p>
+                        <p class="text-soft">Ask a question or file a support ticket, manage request, report an issues. Our support team will get back to you by email. (<?php print $siteEmail; ?>)</p>
                     </div>
                 </div>
+
                 <div class="nk-block-content flex-shrink-0">
-                    <a target="_blank" href="mailto:<?php print $siteEmail;?>" class="btn btn-lg btn-outline-primary">Get Support Now</a>
+                    <a target="_blank" href="mailto:<?php print $siteEmail; ?>" class="btn btn-lg btn-outline-primary">Get Support Now</a>
                 </div>
+
             </div>
         </div>
     </div>

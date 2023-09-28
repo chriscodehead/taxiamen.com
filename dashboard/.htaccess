@@ -72,8 +72,8 @@ RewriteRule ^support-team/?$ support.php [NC]
 RewriteRule ^support/?$ support.php [NC]
 RewriteRule ^profile/?$ profile.php [NC]
 RewriteRule ^add-fund-to-account/?$ add-fund.php [NC]
-
-
+RewriteRule ^taxi-type/?$ taxi-type.php [NC]
+RewriteRule ^edit-taxi/?$ edit-taxi.php [NC]
 
 
 
