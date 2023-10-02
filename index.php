@@ -1,7 +1,8 @@
 <?php
 require_once('include.php');
 $title = $siteName . ' | ' . "From Doorstep to Destination, We`ve Got Your Back!";
-require_once('head.php') ?>
+require_once('head.php');
+?>
 
 <body>
 
@@ -92,9 +93,9 @@ require_once('head.php') ?>
       <div class="container">
         <div class="booking-form">
           <h4 class="booking-title">Book Your Ride</h4>
-          <form action="#">
-            <div class="row">
-              <div class="col-lg-3">
+          <!-- <form action="#"> -->
+          <div class="row">
+            <!-- <div class="col-lg-3">
                 <div class="form-group">
                   <label>Full-Name</label>
                   <input id="name" name="name" type="text" class="form-control" placeholder="Type Location">
@@ -153,8 +154,8 @@ require_once('head.php') ?>
                   <input id="pick_time" name="pick_time" type="text" class="form-control time-picker" placeholder="00:00 AM">
                   <i class="far fa-clock"></i>
                 </div>
-              </div>
-              <!-- <div class="col-lg-2">
+              </div> -->
+            <!-- <div class="col-lg-2">
                 <div class="form-group">
                   <label>Driver Age</label>
                   <select class="select">
@@ -167,7 +168,7 @@ require_once('head.php') ?>
                   </select>
                 </div>
               </div> -->
-              <!-- <div class="col-lg-3">
+            <!-- <div class="col-lg-3">
                 <div class="form-group">
                   <label>Cab Model</label>
                   <select class="select">
@@ -178,11 +179,11 @@ require_once('head.php') ?>
                   </select>
                 </div>
               </div> -->
-              <div class="col-lg-2 align-self-end  mt-20">
-                <button id="sub" name="sub" class="theme-btn" type="submit">Book Taxi<i class="fas fa-arrow-right"></i></button>
-              </div>
+            <div class="col-lg-2 align-self-end  mt-20">
+              <a href="book"><button id="sub" name="sub" class="theme-btn" type="submit">Book Taxi<i class="fas fa-arrow-right"></i></button></a>
             </div>
-          </form>
+          </div>
+          <!-- </form> -->
         </div>
       </div>
     </div>
@@ -498,7 +499,7 @@ require_once('head.php') ?>
     </div>
 
 
-    <!-- <div class="taxi-rate py-120">
+    <div class="taxi-rate py-120">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mx-auto">
@@ -510,93 +511,44 @@ require_once('head.php') ?>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="rate-item wow fadeInUp" data-wow-delay=".25s">
-              <div class="rate-header">
-                <div class="rate-img">
-                  <img src="assets/img/rate/01.png" alt>
+
+          <?php $sql = query_sql("SELECT * FROM $taxi_type ORDER BY id DESC");
+          if (mysqli_num_rows($sql) > 0) {
+            $c = 0;
+            while ($row = mysqli_fetch_assoc($sql)) { ?>
+              <div class="col-md-6 col-lg-4">
+                <div class="rate-item wow fadeInUp" data-wow-delay=".25s">
+                  <div class="rate-header">
+                    <!-- <div class="rate-img">
+                      <img src="assets/img/rate/01.png" alt>
+                    </div> -->
+                  </div>
+                  <div class="rate-header-content">
+                    <h4><?php print $row['title']; ?></h4>
+                    <p class="rate-duration"></p>
+                  </div>
+                  <div class="rate-content">
+                    <div class="rate-icon">
+                      <img src="assets/img/icon/taxi-1.svg" alt>
+                    </div>
+                    <div class="rate-feature">
+                      <ul>
+                        <li><i class="far fa-check-double"></i> Base Charge: <span>€<?php print $row['price']; ?></span></li>
+                        <li><?php print $row['description']; ?></li>
+                      </ul>
+                      <a href="#" class="theme-btn">Choose Plan<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="rate-header-content">
-                <h4>Basic Pakage</h4>
-                <p class="rate-duration">One Time Payment</p>
-              </div>
-              <div class="rate-content">
-                <div class="rate-icon">
-                  <img src="assets/img/icon/taxi-1.svg" alt>
-                </div>
-                <div class="rate-feature">
-                  <ul>
-                    <li><i class="far fa-check-double"></i> Base Charge: <span>$2.30</span></li>
-                    <li><i class="far fa-check-double"></i> Distance Allowance: <span>5000m</span></li>
-                    <li><i class="far fa-check-double"></i> Up To 50 kms: <span>$1.38/km</span></li>
-                    <li><i class="far fa-check-double"></i> Booking Fee: <span>$0.99</span></li>
-                    <li><i class="far fa-check-double"></i> Extra Passangers: <span>$0.45</span></li>
-                  </ul>
-                  <a href="#" class="theme-btn">Choose Plan<i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="rate-item wow fadeInDown" data-wow-delay=".25s">
-              <div class="rate-header">
-                <div class="rate-img">
-                  <img src="assets/img/rate/01.png" alt>
-                </div>
-              </div>
-              <div class="rate-header-content">
-                <h4>Standard Pakage</h4>
-                <p class="rate-duration">One Time Payment</p>
-              </div>
-              <div class="rate-content">
-                <div class="rate-icon">
-                  <img src="assets/img/icon/taxi-1.svg" alt>
-                </div>
-                <div class="rate-feature">
-                  <ul>
-                    <li><i class="far fa-check-double"></i> Base Charge: <span>$2.30</span></li>
-                    <li><i class="far fa-check-double"></i> Distance Allowance: <span>5000m</span></li>
-                    <li><i class="far fa-check-double"></i> Up To 50 kms: <span>$1.38/km</span></li>
-                    <li><i class="far fa-check-double"></i> Booking Fee: <span>$0.99</span></li>
-                    <li><i class="far fa-check-double"></i> Extra Passangers: <span>$0.45</span></li>
-                  </ul>
-                  <a href="#" class="theme-btn">Choose Plan<i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="rate-item wow fadeInUp" data-wow-delay=".25s">
-              <div class="rate-header">
-                <div class="rate-img">
-                  <img src="assets/img/rate/01.png" alt>
-                </div>
-              </div>
-              <div class="rate-header-content">
-                <h4>Premium Pakage</h4>
-                <p class="rate-duration">One Time Payment</p>
-              </div>
-              <div class="rate-content">
-                <div class="rate-icon">
-                  <img src="assets/img/icon/taxi-1.svg" alt>
-                </div>
-                <div class="rate-feature">
-                  <ul>
-                    <li><i class="far fa-check-double"></i> Base Charge: <span>$2.30</span></li>
-                    <li><i class="far fa-check-double"></i> Distance Allowance: <span>5000m</span></li>
-                    <li><i class="far fa-check-double"></i> Up To 50 kms: <span>$1.38/km</span></li>
-                    <li><i class="far fa-check-double"></i> Booking Fee: <span>$0.99</span></li>
-                    <li><i class="far fa-check-double"></i> Extra Passangers: <span>$0.45</span></li>
-                  </ul>
-                  <a href="#" class="theme-btn">Choose Plan<i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+            <?php $c++;
+            }
+          } else { ?>
+          <?php } ?>
+
         </div>
       </div>
-    </div> -->
+    </div>
 
 
 

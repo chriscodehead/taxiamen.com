@@ -6,6 +6,7 @@ RewriteEngine on
 
 
 RewriteRule ^we-welcome-you/?$ index.php [NC]
+RewriteRule ^home/?$ index.php [NC]
 RewriteRule ^deposit/?$ deposit.php [NC]
 RewriteRule ^deposit_btc/?$ deposit_btc.php [NC]
 RewriteRule ^invest-capital/?$ deposit.php [NC]
@@ -74,6 +75,7 @@ RewriteRule ^profile/?$ profile.php [NC]
 RewriteRule ^add-fund-to-account/?$ add-fund.php [NC]
 RewriteRule ^taxi-type/?$ taxi-type.php [NC]
 RewriteRule ^edit-taxi/?$ edit-taxi.php [NC]
+RewriteRule ^book-details/?$ book-details.php [NC]
 
 
 

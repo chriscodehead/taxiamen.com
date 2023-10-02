@@ -46,8 +46,8 @@
          <div class="collapse navbar-collapse" id="main_nav">
            <ul class="navbar-nav">
              <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
-             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-             <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+             <li class="nav-item"><a class="nav-link" href="./#about">About</a></li>
+             <li class="nav-item"><a class="nav-link" href="./#service">Service</a></li>
              <li class="nav-item"><a class="nav-link" href="book">Book Taxi</a></li>
              <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
            </ul>

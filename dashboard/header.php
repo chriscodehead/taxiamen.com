@@ -73,11 +73,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown notification-dropdown mr-n1">
+                    <!-- <li class="dropdown notification-dropdown mr-n1">
                         <a href="notification" class="nk-quick-nav-icon">
                             <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

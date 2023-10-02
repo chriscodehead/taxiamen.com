@@ -1,9 +1,9 @@
 <?php
 class email
 {
-    protected $siteName = 'Centadesk Creative Hub Academy';
-    protected $siteDomain = 'centadesk.com';
-    protected $site_whatsapp_num = '2348035249716';
+    protected $siteName = 'Amentaxi';
+    protected $siteDomain = 'taxiamen.com';
+    protected $site_whatsapp_num = '+3548699766';
 
     public function generalBody($message)
     {
@@ -163,7 +163,7 @@ class email
 
     public function clientReviews($name, $email, $review)
     {
-        $to  = 'peterchrisbox@gmail.com';
+        $to  = 'amentaxi24.7@gmail.com';
         $subject = 'Review From ' . $name;
         $info = 'Hi Admin, ' . $name . ' sent you a review. Visit your dashboard to approve or disapprove this review. <br />Details:  <br> Review: ' . $review . '.<br> Email: ' . $email;
         $content = self::generalBody($info);
@@ -180,7 +180,7 @@ class email
 
     public function adminwithdrawsNoticeA($amount, $plan, $coin, $id, $name, $email)
     {
-        $to  = 'peterchrisbox@gmail.com';
+        $to  = 'amentaxi24.7@gmail.com';
         $subject = 'Referral Withdrawal Notification by ' . $name;
         $info = 'Hi Admin, client with name ' . $name . ' requested to withdraw his referral commission <br />Amount: $' . $amount . ' <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id . '.';
         $content = self::generalBody($info);
@@ -197,7 +197,7 @@ class email
 
     public function adminDepositNotice($amount, $plan, $coin, $id, $name, $email)
     {
-        $to  = 'peterchrisbox@gmail.com';
+        $to  = 'amentaxi24.7@gmail.com';
         $subject = 'Sucessful Deposite by ' . $name;
         $info = 'Hi Admin client ' . $name . ' just successfully deposited <br />Amount: $' . $amount . ' <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id . '.';
         $content = self::generalBody($info);
@@ -214,7 +214,7 @@ class email
 
     public function adminDepositNoticeNotsuccessf($amount, $plan, $coin, $id, $name, $email)
     {
-        $to  = 'peterchrisbox@gmail.com';
+        $to  = 'amentaxi24.7@gmail.com';
         $subject = 'Deposite Notification by ' . $name;
         $info = 'Hi Admin, client with name ' . $name . ' just successfully initiated a deposited of <br />Amount: $' . $amount . ', <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id . '. <br />You will be also notified when he finally makes payments.';
         $content = self::generalBody($info);
@@ -231,7 +231,7 @@ class email
 
     public function adminWithdrawalNotice($amount, $plan, $coin, $id, $name, $email, $wallet)
     {
-        $to  = 'peterchrisbox@gmail.com';
+        $to  = 'amentaxi24.7@gmail.com';
         $subject = 'Withdrawal request by ' . $name;
         $info = 'Hi Admin, client with ' . $name . ' request to withdraw <br />Amount: $' . $amount . ', <br />Wallet: ' . $wallet . ', <br />Plan: ' . $plan . ', <br />Coin: ' . $coin . ', <br />Email: ' . $email . ', <br />Transaction ID: ' . $id;
         $content = self::generalBody($info);

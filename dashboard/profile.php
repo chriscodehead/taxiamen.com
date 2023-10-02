@@ -1,16 +1,17 @@
 <?php
 require_once('include.php');
-$title = 'Profile | '.$siteName;
+$title = 'Profile | ' . $siteName;
 $desc = '';
-require_once('head.php');?>
+require_once('head.php'); ?>
+
 <body class="nk-body npc-crypto bg-white has-sidebar ">
     <div class="nk-app-root">
         <!-- main @s -->
         <div class="nk-main ">
-            <?php require_once('side-bar.php');?>
+            <?php require_once('side-bar.php'); ?>
             <!-- wrap @s -->
             <div class="nk-wrap ">
-                <?php require_once('header.php');?>
+                <?php require_once('header.php'); ?>
                 <!-- content @s -->
                 <div class="nk-content nk-content-fluid">
                     <div class="container-xl wide-lg">
@@ -27,15 +28,15 @@ require_once('head.php');?>
                                 <div class="nk-block">
                                     <div class="card card-bordered">
                                         <div class="nk-kycfm">
-                                            <center>
-                                                    <div class="nk-kycfm-head">
-                                                        <a onClick="performClick('theFile');" id="point"><img id="btn" style="width:130px; height:130px;" src="<?php print './photo/'.$sqli->getRow($sqli->getEmail($_SESSION['user_code']),'passport');?>" alt="" class="avatar-lg rounded-circle img-thumbnail"></a>
-                                                        <div class="nk-kycfm-title">
+                                            <!-- <center>
+                                                <div class="nk-kycfm-head">
+                                                    <a onClick="performClick('theFile');" id="point"><img id="btn" style="width:130px; height:130px;" src="<?php print './photo/' . $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'passport'); ?>" alt="" class="avatar-lg rounded-circle img-thumbnail"></a>
+                                                    <div class="nk-kycfm-title">
                                                         <h5 class="title" style="margin-left: 10px;"> Tap to edit</h5>
-                                                        </div>
-                                                        <input style="display: none;" class="hidden cropper-source" id="theFile" type="file" data-handler="" data-width="320" data-height="320" data-attribute="photo" data-preview="<?php print '../photo/'.$sqli->getRow($sqli->getEmail($_SESSION['user_code']),'passport');?>"/>
                                                     </div>
-                                            </center>
+                                                    <input style="display: none;" class="hidden cropper-source" id="theFile" type="file" data-handler="" data-width="320" data-height="320" data-attribute="photo" data-preview="<?php print '../photo/' . $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'passport'); ?>" />
+                                                </div>
+                                            </center> -->
                                             <div class="nk-kycfm-head">
                                                 <div class="nk-kycfm-count">01</div>
                                                 <div class="nk-kycfm-title">
@@ -55,7 +56,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">Username <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input readonly value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'client_username');?>" type="text" class="form-control form-control-lg">
+                                                                <input readonly value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'client_username'); ?>" type="text" class="form-control form-control-lg">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -65,7 +66,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">First Name <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'first_name');?>"  name="fname" id="fname">
+                                                                <input type="text" class="form-control form-control-lg" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'first_name'); ?>" name="fname" id="fname">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -75,7 +76,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">Last Name <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'last_name');?>" name="lname" id="lname">
+                                                                <input type="text" class="form-control form-control-lg" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'last_name'); ?>" name="lname" id="lname">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -85,7 +86,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">Email Address <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" id="email" name="email" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'email');?>">
+                                                                <input type="text" class="form-control form-control-lg" id="email" name="email" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'email'); ?>">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,7 +96,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">Phone Number <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'phone');?>" name="phone" id="phone">
+                                                                <input type="text" class="form-control form-control-lg" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'phone'); ?>" name="phone" id="phone">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -106,10 +107,10 @@ require_once('head.php');?>
                                                                 <label class="form-label">Sex <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <?php $sex = $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'sex');?>
+                                                                <?php $sex = $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'sex'); ?>
                                                                 <select class="form-control" id="sex">
-                                                                    <option <?php if($sex=='Male') print 'selected="selected';?> value="Male">Male</option>
-                                                                    <option <?php if($sex=='Female') print 'selected="selected';?> value="Female">Female</option>
+                                                                    <option <?php if ($sex == 'Male') print 'selected="selected'; ?> value="Male">Male</option>
+                                                                    <option <?php if ($sex == 'Female') print 'selected="selected'; ?> value="Female">Female</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -135,7 +136,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">Address <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" id="address" name="address" class="form-control font-fix" placeholder="Home Address" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'address');?>">
+                                                                <input type="text" id="address" name="address" class="form-control font-fix" placeholder="Home Address" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'address'); ?>">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -145,7 +146,7 @@ require_once('head.php');?>
                                                                 <label class="form-label">City</label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input class="form-control" type="text" id="country" name="country" placeholder="Country" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']),'country');?>">
+                                                                <input class="form-control" type="text" id="country" name="country" placeholder="Country" value="<?php print $sqli->getRow($sqli->getEmail($_SESSION['user_code']), 'country'); ?>">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -165,37 +166,37 @@ require_once('head.php');?>
                     </div>
                 </div>
                 <!-- content @e -->
-<?php require_once('footer.php');?>
-<script type="text/javascript" src="./dashboard/js/functionsmain.js"></script>
-<script>
-    $(document).ready(function(){
-        $('#btn').css("cursor","pointer");
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#clik').css("cursor","pointer");
-        $('#theFile').on('change',(function(e) {
-            var file_data = $('#theFile').prop('files')[0];
-            var form_data = new FormData();
-            form_data.append('file', file_data);
-            $.ajax({
-                url: './dashboard/code_prosessor.php', // point to server-side PHP script
-                dataType: 'text',  // what to expect back from the PHP script, if anything
-                cache: false,
-                contentType: false,
-                processData: false,
-                data: form_data,
-                type: 'post',
-                success: function(php_script_response){
-                    sweetUnpre(php_script_response); // display response from the PHP script, if any
-                    setTimeout(refreshThisPage,2500);
-                }
-            });
-            sweetUnpre("Processing...");
-        }));
-    });
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();
-    });
-</script>
+                <?php require_once('footer.php'); ?>
+                <script type="text/javascript" src="./dashboard/js/functionsmain.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#btn').css("cursor", "pointer");
+                    });
+                </script>
+                <script type="text/javascript">
+                    $(document).ready(function(e) {
+                        $('#clik').css("cursor", "pointer");
+                        $('#theFile').on('change', (function(e) {
+                            var file_data = $('#theFile').prop('files')[0];
+                            var form_data = new FormData();
+                            form_data.append('file', file_data);
+                            $.ajax({
+                                url: './dashboard/code_prosessor.php', // point to server-side PHP script
+                                dataType: 'text', // what to expect back from the PHP script, if anything
+                                cache: false,
+                                contentType: false,
+                                processData: false,
+                                data: form_data,
+                                type: 'post',
+                                success: function(php_script_response) {
+                                    sweetUnpre(php_script_response); // display response from the PHP script, if any
+                                    setTimeout(refreshThisPage, 2500);
+                                }
+                            });
+                            sweetUnpre("Processing...");
+                        }));
+                    });
+                    $(document).ready(function() {
+                        $('[data-toggle="popover"]').popover();
+                    });
+                </script>

@@ -54,8 +54,8 @@ if (isset($_POST['sub'])) {
                                 $result = $cal->insertDataB($user_tb, $feilds, $value);
                                 $msg = $result;
                                 if ($result == 'Registration was successful. Proceed to login!') {
-                                    $email_call->ActivateMail($email, $passh);
-                                    $email_call->referalNew($nameM, $emailM, $nameR, $emailR, $usernameM, $usernameR);
+                                    //$email_call->ActivateMail($email, $passh);
+                                    //$email_call->referalNew($nameM, $emailM, $nameR, $emailR, $usernameM, $usernameR);
                                     header("location:login?inc=" . $msg);
                                 }
                             } else if ($cal->checkifdataExists($affiliateusername, 'client_username', $user_tb) == 0) {
@@ -69,7 +69,7 @@ if (isset($_POST['sub'])) {
                             $result = $cal->insertDataB($user_tb, $feilds, $value);
                             $msg =  $result;
                             if ($result == 'Registration was successful. Proceed to login!') {
-                                $email_call->ActivateMail($email, $passh);
+                                //$email_call->ActivateMail($email, $passh);
                                 header("location:login?inc=" . $msg);
                             }
                         }

@@ -2,7 +2,7 @@
 require_once('include.php');
 
 if (isset($_POST['sub'])) {
-  $taxi_id =  $bassic->picker();
+  $taxi_id =  $bassic->picker() . uniqid();
   $title = mysqli_real_escape_string($link, $_POST['title']);
   $price = mysqli_real_escape_string($link, $_POST['price']);
   $description = $_POST['description'];
@@ -125,8 +125,10 @@ require_once('head.php'); ?>
 
         <div class="nk-content nk-content-fluid">
           <div class="container-xl wide-lg">
+
             <div class="nk-content-body">
               <div class="kyc-app wide-sm m-auto">
+                <h3>Recent Data</h3>
                 <div class="table-responsive">
                   <table id="myTable" class="display">
                     <thead>

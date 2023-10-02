@@ -18,4 +18,13 @@
  <link rel="stylesheet" href="assets/css/jquery.timepicker.min.css">
  <link rel="stylesheet" href="assets/css/nice-select.min.css">
  <link rel="stylesheet" href="assets/css/style.css">
+ <link href="sweetalert-js/sweetalert.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="sweetalert-js/sweetalert.min.js"></script>
+ <script type="text/javascript">
+  function sweetUnpre(msg) {
+   swal(
+    msg
+   );
+  }
+ </script>
 </head>
