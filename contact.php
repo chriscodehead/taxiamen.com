@@ -78,8 +78,7 @@ require_once('head.php');
        <div class="contact-form">
         <div class="contact-form-header">
          <h2>Get In Touch</h2>
-         <p>It is a long established fact that a reader will be distracted by the readable
-          content of a page randomised words slightly when looking at its layout. </p>
+         <p> </p>
         </div>
         <form method="post" action="" id="contact-form">
          <div class="row">
@@ -101,7 +100,7 @@ require_once('head.php');
           <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Write Your Message"></textarea>
          </div>
 
-         <button type="submit" class="theme-btn" id="n" onClick="contatMail();">Send
+         <button type="button" class="theme-btn" id="n" onClick="contatMail();">Send
           Message <i class="far fa-paper-plane"></i></button>
 
          <div class="col-md-12 mt-3">
@@ -131,7 +130,7 @@ require_once('head.php');
    var name = document.getElementById('name').value;
    var subject = document.getElementById('subject').value;
    var message = document.getElementById('message').value;
-   var vars = "cotactmail=" + cotactmail + "&name=" + name + "&message=" + message;
+   var vars = "cotactmail=" + cotactmail + "&name=" + name + "&message=" + message + "&subject=" + subject;
    if (cotactmail == "" || name == "" || message == "") {
     sweetUnpre("Please fill all necessary fields!");
     $('i#sp5').attr("class", "");

@@ -54,10 +54,13 @@ RewriteRule ^anti-money-laundering-policy/?$ anti-money-laundering-policy.php [N
 RewriteRule ^refund-policy/?$ refund-policy.php [NC]
 RewriteRule ^book/?$ book.php [NC]
 RewriteRule ^continue-to-payment/?$ continue-to-payment.php [NC]
+RewriteRule ^success-server/?$ success-server.php [NC]
+RewriteRule ^success-payment/?$ success-payment.php [NC]
+RewriteRule ^cancel-payment/?$ cancel-payment.php [NC]
+RewriteRule ^error-payment/?$ error-payment.php [NC]
 
 
 
 #RewriteEngine On
 #RewriteCond %{SERVER_PORT} 80
 #RewriteRule ^(.*)$ https://omegagoldelon.com/$1  [R,L]
-

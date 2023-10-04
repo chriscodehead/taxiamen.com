@@ -265,7 +265,7 @@ class email
 
     public function contactUsMail($name, $email, $subject, $message)
     {
-        $to  = 'support@' . $this->siteDomain;
+        $to  = 'amentaxi24.7@gmail.com';
         $subject = $subject;
         $info = $message . '<br /></br><strong>Name: ' . $name . ',<br />Email: ' . $email . '</strong>';
         $content = self::generalBody($info);
