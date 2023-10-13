@@ -36,7 +36,7 @@ if (isset($_POST['sub'])) {
   $update_date  =  date('Y-m-d g:i:a');
   $deleted = 'no';
 
-  if (!empty($name) && !empty($phone) && !empty($email) && !empty($pick_location) && !empty($drop_location) && !empty($passengers) && !empty($cab_type) && !empty($pick_date) && !empty($pick_time) && !empty($taxi_type)) {
+  if (!empty($name) && !empty($phone) && !empty($email) && !empty($pick_location) && !empty($drop_location) && !empty($passengers) && !empty($pick_date) && !empty($pick_time) && !empty($taxi_type)) {
 
     $feilds = array('id', 'booking_id', 'name', 'phone', 'email', 'pick_location', 'drop_location', 'passengers', 'cab_type', 'pick_date', 'pick_time', 'message', 'taxi_type', 'price', 'taxi_title', 'payment_status', 'booking_status', 'driver', 'date_booked', 'comments', 'update_date', 'deleted');
 
@@ -47,12 +47,18 @@ if (isset($_POST['sub'])) {
     if ($insert) {
       $msg = 'Your data was entered successfully!';
       $subjt = 'Booking Info';
-      $message = 'Hi ' . $name . ', Your booking was successful. Booking Id: ' . $booking_id . ', Pick Up Location: ' . $pick_location . ', Drop Location: ' . $drop_location . ', Taxi Type: ' . $taxi_title . ',  Pick Up Date: ' . $pick_date . ', Pick Up Time: ' . $pick_time . ', Price: €' . $price;
+      $message = 'Hi ' . $name . ', Your booking was successful. <br />Booking Id: ' . $booking_id . ', <br />Pick Up Location: ' . $pick_location . ', <br />Drop Location: ' . $drop_location . ', <br />Taxi Type: ' . $taxi_title . ',  <br />Pick Up Date: ' . $pick_date . ', <br />Pick Up Time: ' . $pick_time . ', <br />Price: €' . $price;
       $email = $email;
       $siteName = $siteName;
       $siteDomain = $siteDomain;
-
       $email_call->generalMessage($subjt, $message, $email, $siteName, $siteDomain);
+
+      $name = $name;
+      $email = $dummyEmail;
+      $subject = 'New Booking Order From ' . $name . ' - ID:' . $booking_id;
+      $message = 'Booking information from ' . $name . '. <br />Booking Id: ' . $booking_id . ', <br />Pick Up Location: ' . $pick_location . ', <br />Drop Location: ' . $drop_location . ', <br />Taxi Type: ' . $taxi_title . ',  <br />Pick Up Date: ' . $pick_date . ', <br />Pick Up Time: ' . $pick_time . ', <br />Price: €' . $price;
+      $email_call->generalMessage($subject, $message, $email, $siteName, $siteDomain);
+
       header("location:continue-to-payment?id=" . $booking_id);
     } else {
       $msg = 'Error! Please try again.';
@@ -177,14 +183,14 @@ if (isset($_POST['sub'])) {
                       <label>Passengers</label>
                       <select id="passengers" name="passengers" class="select">
                         <option value>Choose Cab</option>
-                        <?php for ($i = 1; $i <= 20; $i++) { ?>
+                        <?php for ($i = 1; $i <= 8; $i++) { ?>
                           <option value="<?php print $i; ?>"><?php print $i; ?></option>
                         <?php } ?>
                       </select>
                     </div>
                   </div>
 
-                  <div class="col-lg-6">
+                  <div style="display: none;" class="col-lg-6">
                     <div class="form-group">
                       <label>Cab Type</label>
                       <select id="cab_type" name="cab_type" class="select">

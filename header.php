@@ -32,8 +32,8 @@
    <div class="main-navigation">
      <nav class="navbar navbar-expand-lg">
        <div class="container position-relative">
-         <a class="navbar-brand" href="./">
-           <img src="img/logo.png" alt="logo">
+         <a class="" href="./">
+           <img width="300" src="img/logo.png" alt="logo">
          </a>
          <div class="mobile-menu-right">
            <div class="search-btn">
