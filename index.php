@@ -35,7 +35,7 @@ require_once('head.php');
                     Welcome to <?php print $siteName; ?>, your trusted transportation partner in Your City. We are proud to be the go-to choice for reliable, safe, and comfortable taxi services. At <?php print $siteName; ?>, we believe that every journey should be a hassle-free and enjoyable experience.
                   </p>
                   <div class="hero-btn justify-content-center" data-animation="fadeInUp" data-delay="1s">
-                    <a href="about" class="theme-btn">About Us<i class="fas fa-arrow-right"></i></a>
+                    <a href="#about" class="theme-btn">About Us<i class="fas fa-arrow-right"></i></a>
                     <a href="book" class="theme-btn theme-btn2">Book A Taxi<i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ require_once('head.php');
                     Count on us to be there when you need us. We take pride in our punctuality and dependability.
                   </p>
                   <div class="hero-btn justify-content-center" data-animation="fadeInUp" data-delay="1s">
-                    <a href="about" class="theme-btn">About Us<i class="fas fa-arrow-right"></i></a>
+                    <a href="#about" class="theme-btn">About Us<i class="fas fa-arrow-right"></i></a>
                     <a href="book" class="theme-btn theme-btn2">Book Taxi<i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ require_once('head.php');
                     With <?php print $siteName; ?>, you'll always know the fare upfront, with no hidden fees or surprises. Our drivers are not just skilled behind the wheel but also courteous and knowledgeable about the local area.
                   </p>
                   <div class="hero-btn justify-content-center" data-animation="fadeInUp" data-delay="1s">
-                    <a href="about" class="theme-btn">About Us<i class="fas fa-arrow-right"></i></a>
+                    <a href="#about" class="theme-btn">About Us<i class="fas fa-arrow-right"></i></a>
                     <a href="book" class="theme-btn theme-btn2">Book A Ride<i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -179,8 +179,8 @@ require_once('head.php');
                   </select>
                 </div>
               </div> -->
-            <div class="col-lg-2 align-self-end  mt-20">
-              <a href="book"><button id="sub" name="sub" class="theme-btn" type="submit">Book Taxi<i class="fas fa-arrow-right"></i></button></a>
+            <div class="col-lg-6 align-self-end  mt-20">
+              <a href="book"><button id="sub" name="sub" class="theme-btn" type="submit">Click To Book A Taxi<i class="fas fa-arrow-right"></i></button></a>
             </div>
           </div>
           <!-- </form> -->
@@ -225,7 +225,7 @@ require_once('head.php');
                   </li>
                 </ul>
               </div>
-              <a href="about" class="theme-btn mt-4">Discover More<i class="fas fa-arrow-right"></i></a>
+              <!--<a href="#about" class="theme-btn mt-4">Discover More<i class="fas fa-arrow-right"></i></a>-->
             </div>
           </div>
         </div>
@@ -262,7 +262,7 @@ require_once('head.php');
                   Easy online booking for quick, hassle-free travel.
                 </p>
                 <div class="service-arrow">
-                  <a href="book" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                  <a href="book" class="theme-btn">Learn More<i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -284,7 +284,7 @@ require_once('head.php');
                   Seamless city transportation you can trust, at your service 24/7.
                 </p>
                 <div class="service-arrow">
-                  <a href="book" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                  <a href="book" class="theme-btn">Learn More<i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -300,13 +300,13 @@ require_once('head.php');
               </div>
               <div class="service-content">
                 <h3 class="service-title">
-                  <a href="book">Airport Transport</a>
+                  <a href="book">Airport To City/Hotel & City/Hotel To Airport</a>
                 </h3>
                 <p class="service-text">
                   Reliable airport transfers for stress-free journeys.
                 </p>
                 <div class="service-arrow">
-                  <a href="book" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                  <a href="book" class="theme-btn">Learn More<i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ require_once('head.php');
                   Professional business transport solutions that mean business.
                 </p>
                 <div class="service-arrow">
-                  <a href="book" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                  <a href="book" class="theme-btn">Learn More<i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -350,7 +350,7 @@ require_once('head.php');
                   Everyday, dependable transportation for your routine.
                 </p>
                 <div class="service-arrow">
-                  <a href="book" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                  <a href="book" class="theme-btn">Learn More<i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -372,7 +372,7 @@ require_once('head.php');
                   Explore with confidence – our tour transport is your gateway to adventure.
                 </p>
                 <div class="service-arrow">
-                  <a href="book" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                  <a href="book" class="theme-btn">Learn More<i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ require_once('head.php');
                   <img src="assets/img/icon/taxi-1.svg" alt>
                 </div>
                 <div>
-                  <span class="counter" data-count="+" data-to="500" data-speed="3000">500</span>
+                  <span class="counter" data-count="+" data-to="25" data-speed="3000">25</span>
                   <h6 class="title">+ Available Taxi </h6>
                 </div>
               </div>
@@ -416,7 +416,7 @@ require_once('head.php');
                   <img src="assets/img/icon/driver.svg" alt>
                 </div>
                 <div>
-                  <span class="counter" data-count="+" data-to="700" data-speed="3000">700</span>
+                  <span class="counter" data-count="+" data-to="40" data-speed="3000">40</span>
                   <h6 class="title">+ Our Drivers</h6>
                 </div>
               </div>
@@ -536,7 +536,7 @@ require_once('head.php');
                         <li><i class="far fa-check-double"></i> Base Charge: <span>€<?php print $row['price']; ?></span></li>
                         <li><?php print $row['description']; ?></li>
                       </ul>
-                      <a href="#" class="theme-btn">Choose Plan<i class="fas fa-arrow-right"></i></a>
+                      <a href="book" class="theme-btn">Choose Plan<i class="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -638,13 +638,143 @@ require_once('head.php');
           </div>
         </div>
         <div class="testimonial-slider owl-carousel owl-theme">
+
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/07.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>John from New York</h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                <?php print $siteName; ?> exceeded my expectations. Courteous drivers, on-time pickups, and a seamless app experience. I recommend them to anyone seeking reliable transportation in the city.
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/08.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>Emily from San Diego California</h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                I rely on <?php print $siteName; ?> for my daily commute. Punctual, friendly drivers and fair rates. A trustworthy service that has made my travels around London much more enjoyable."
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/09.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>Paul from Miami Florida</h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                Impressed with <?php print $siteName; ?>'s service. Affordable rates, clean cars, and drivers who know the city well. A stress-free way to get around. Will be a repeat customer!
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/10.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>Jessica from Dallas Texas</h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                <?php print $siteName; ?> is my preferred choice for business travel. Their professionalism, 24/7 availability, and commitment to safety make them stand out. An excellent service every time.
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/12.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>James from Manchester </h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                Exceptional service from <?php print $siteName; ?>. Quick pickups, courteous drivers, and a smooth ride every time. I appreciate their commitment to providing reliable transportation in Manchester.
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+
           <div class="testimonial-single">
             <div class="testimonial-content">
               <div class="testimonial-author-img">
                 <img src="assets/img/testimonial/01.jpg" alt>
               </div>
               <div class="testimonial-author-info">
-                <h4>Sylvia Green</h4>
+                <h4>Sylvia Green From Edmonton Green London</h4>
                 <p>Customer</p>
               </div>
             </div>
@@ -662,13 +792,39 @@ require_once('head.php');
               <i class="fas fa-star"></i>
             </div>
           </div>
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/13.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>Lukas from Berlin </h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                <?php print $siteName; ?> ist fantastisch! Pünktlich, erschwinglich und freundliche Fahrer. Ich vertraue ihnen für meine täglichen Fahrten in Berlin. Absolut empfehlenswert!
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
           <div class="testimonial-single">
             <div class="testimonial-content">
               <div class="testimonial-author-img">
                 <img src="assets/img/testimonial/02.jpg" alt>
               </div>
               <div class="testimonial-author-info">
-                <h4>Gordo Novak</h4>
+                <h4>Gordo Novak From Solihull Birmingham</h4>
                 <p>Customer</p>
               </div>
             </div>
@@ -686,13 +842,14 @@ require_once('head.php');
               <i class="fas fa-star"></i>
             </div>
           </div>
+
           <div class="testimonial-single">
             <div class="testimonial-content">
               <div class="testimonial-author-img">
                 <img src="assets/img/testimonial/03.jpg" alt>
               </div>
               <div class="testimonial-author-info">
-                <h4>Reid Butt</h4>
+                <h4>Reid Butt From Germany (Düsseldorf)</h4>
                 <p>Customer</p>
               </div>
             </div>
@@ -710,37 +867,15 @@ require_once('head.php');
               <i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="testimonial-single">
-            <div class="testimonial-content">
-              <div class="testimonial-author-img">
-                <img src="assets/img/testimonial/04.jpg" alt>
-              </div>
-              <div class="testimonial-author-info">
-                <h4>Parker Jime</h4>
-                <p>Customer</p>
-              </div>
-            </div>
-            <div class="testimonial-quote">
-              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
-              <p>
-                <?php print $siteName; ?>'s customer support is top-notch. I appreciate their quick response to queries and their dedication to ensuring a smooth and enjoyable travel experience.
-              </p>
-            </div>
-            <div class="testimonial-rate">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
+
+
           <div class="testimonial-single">
             <div class="testimonial-content">
               <div class="testimonial-author-img">
                 <img src="assets/img/testimonial/05.jpg" alt>
               </div>
               <div class="testimonial-author-info">
-                <h4>Heruli Nez</h4>
+                <h4>Heruli Nez From Paris France</h4>
                 <p>Customer</p>
               </div>
             </div>
@@ -758,6 +893,35 @@ require_once('head.php');
               <i class="fas fa-star"></i>
             </div>
           </div>
+
+
+          <div class="testimonial-single">
+            <div class="testimonial-content">
+              <div class="testimonial-author-img">
+                <img src="assets/img/testimonial/04.jpg" alt>
+              </div>
+              <div class="testimonial-author-info">
+                <h4>Parker Jime From Paris France</h4>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="testimonial-quote">
+              <span class="testimonial-quote-icon"><i class="far fa-quote-right"></i></span>
+              <p>
+                <?php print $siteName; ?>'s customer support is top-notch. I appreciate their quick response to queries and their dedication to ensuring a smooth and enjoyable travel experience.
+              </p>
+            </div>
+            <div class="testimonial-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
     </div>
